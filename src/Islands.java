@@ -1,5 +1,5 @@
 public class Islands {
-    public static int numIslands(char[][] grid){
+    public static void numIslands(char[][] grid){
         int count = 0;
         for(int i=0; i<grid.length; i++){
             for(int j=0; j<grid.length; j++){
@@ -10,7 +10,6 @@ public class Islands {
             }
         }
         System.out.println(count);
-        return count;
     }
     public static void callBFS(char[][] grid, int i, int j){
         boolean b = i < 0 || i >= grid.length || j < 0 || j >= grid.length || grid[i][j] == '0';
